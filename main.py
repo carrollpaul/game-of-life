@@ -45,8 +45,7 @@ class Grid:
                 x, y = coordinate[0], coordinate[1]
                 rect = pygame.Rect(x*self.scale, y*self.scale, self.scale, self.scale)
                 pygame.draw.rect(screen, BLACK, rect)
-
-    
+                
     def update(self):
         for coordinate, cell in self.grid.items():
             x, y = coordinate[0], coordinate[1]
