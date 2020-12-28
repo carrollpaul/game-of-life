@@ -37,7 +37,6 @@ class Grid:
         self.width = width
         self.height = height
         self.scale = scale
-        # self.grid = [[Cell() for cell in range(10)] for row in range(10)]
         self.grid = {(x, y): Cell() for x in range(self.width) for y in range(self.height)}
     
     def draw(self):
